@@ -1,7 +1,6 @@
 import 'package:flutter/widgets.dart';
 
 class FlowManager {
-
   factory FlowManager({
     required Size designSize,
     required BuildContext context,
@@ -23,6 +22,7 @@ class FlowManager {
     _designSize = designSize;
     _context = context;
   }
+
   static FlowManager? _instance;
 
   /// Store the design size of the app
@@ -33,7 +33,19 @@ class FlowManager {
 
   /// Returns the instance of the [FlowManager]
   static FlowManager get instance {
-    assert(_instance != null, 'FlowManager is not initialized');
+    assert(
+        _instance != null,
+        'Flexiflow is not initialized!'
+        '\nPlease wrap your app with Flexiflow widget.'
+        '\nExample:'
+        '\nvoid main() {'
+        '\n  runApp('
+        '\n    FlexiFlow('
+        '\n      designSize: Size(360, 640),'
+        '\n      child: const MyApp(),'
+        '\n    ),'
+        '\n  );'
+        '\n}');
     return _instance!;
   }
 

@@ -1,7 +1,13 @@
+import 'package:flexiflow/flexiflow.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    FlexiFlow(
+      designSize: Size(360, 640),
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -56,6 +62,18 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            Text('Non-flexiflowized box'),
+            Container(
+              height: 100,
+              width: 100,
+              color: Colors.red,
+            ),
+            Text('Flexiflowized box'),
+            Container(
+              height: 100.sqr,
+              width: 100.sqr,
+              color: Colors.red,
             ),
           ],
         ),
