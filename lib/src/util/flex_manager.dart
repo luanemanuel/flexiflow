@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 
-class FlowManager {
-  factory FlowManager({
+class FlexManager {
+  factory FlexManager({
     required Size designSize,
     required BuildContext context,
   }) {
@@ -9,13 +9,13 @@ class FlowManager {
       _instance!.updateContext(context);
       return _instance!;
     }
-    return _instance = FlowManager._(
+    return _instance = FlexManager._(
       designSize: designSize,
       context: context,
     );
   }
 
-  FlowManager._({
+  FlexManager._({
     required Size designSize,
     required BuildContext context,
   }) {
@@ -23,7 +23,7 @@ class FlowManager {
     _context = context;
   }
 
-  static FlowManager? _instance;
+  static FlexManager? _instance;
 
   /// Store the design size of the app
   late Size _designSize;
@@ -31,8 +31,8 @@ class FlowManager {
   /// Store the actual buildContext of the app to calculate the screen size
   late BuildContext _context;
 
-  /// Returns the instance of the [FlowManager]
-  static FlowManager get instance {
+  /// Returns the instance of the [FlexManager]
+  static FlexManager get instance {
     assert(
         _instance != null,
         'Flexiflow is not initialized!'

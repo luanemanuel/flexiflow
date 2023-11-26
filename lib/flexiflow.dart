@@ -1,4 +1,4 @@
 library flexiflow;
 
-export 'src/util/flow_extension.dart';
-export 'src/widgets/flexiflow_builder.dart';
+export 'src/util/flex_extension.dart';
+export 'src/widgets/flex_builder.dart';

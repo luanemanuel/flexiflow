@@ -1,4 +1,4 @@
-import 'package:flexiflow/src/util/flow_manager.dart';
+import 'package:flexiflow/src/util/flex_manager.dart';
 import 'package:flutter/widgets.dart';
 
 class FlexiFlow extends StatefulWidget {
@@ -16,12 +16,12 @@ class FlexiFlow extends StatefulWidget {
 }
 
 class _FlexiFlowState extends State<FlexiFlow> with WidgetsBindingObserver {
-  late final FlowManager _flowManager;
+  late final FlexManager _flowManager;
 
   @override
   void initState() {
     super.initState();
-    _flowManager = FlowManager(
+    _flowManager = FlexManager(
       designSize: widget.designSize,
       context: context,
     );

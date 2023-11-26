@@ -1,21 +1,22 @@
-import 'package:flexiflow/src/util/flow_manager.dart';
+import 'package:flexiflow/src/util/flex_manager.dart';
+import 'package:flutter/material.dart';
 
-extension FlowExtension on num {
+extension FlexExtension on num {
   /// Calculate responsive width based on the design size.
-  double get width => FlowManager.instance.width(this);
+  double get width => FlexManager.instance.width(this);
 
   /// Calculate responsive width based on the design size.
   double get w => width;
 
   /// Calculate responsive height based on the design size.
-  double get height => FlowManager.instance.height(this);
+  double get height => FlexManager.instance.height(this);
 
   /// Calculate responsive height based on the design size.
   double get h => height;
 
   /// Calculate responsive squared size based on the design size.
   /// Useful for square widgets like [CircleAvatar], [IconButton], etc.
-  double get squared => FlowManager.instance.squared(this);
+  double get squared => FlexManager.instance.squared(this);
 
   /// Calculate responsive squared size based on the design size.
   /// Useful for square widgets like [CircleAvatar], [IconButton], etc.
@@ -25,7 +26,7 @@ extension FlowExtension on num {
   /// [maxWidth] is the maximum width can take on responsive resizing
   /// [minWidth] is the minimum width can take on responsive resizing
   double limitedWidth({num? maxWidth, num? minWidth}) =>
-      FlowManager.instance.width(
+      FlexManager.instance.width(
         this,
         maxWidth: maxWidth,
         minWidth: minWidth,
@@ -43,7 +44,7 @@ extension FlowExtension on num {
   /// [maxHeight] is the maximum height can take on responsive resizing
   /// [minHeight] is the minimum height can take on responsive resizing
   double limitedHeight({num? maxHeight, num? minHeight}) =>
-      FlowManager.instance.height(
+      FlexManager.instance.height(
         this,
         maxHeight: maxHeight,
         minHeight: minHeight,
@@ -61,7 +62,7 @@ extension FlowExtension on num {
   /// Useful for square widgets like [CircleAvatar], [IconButton], etc.
   /// [max] is the maximum size can take on responsive resizing
   /// [min] is the minimum size can take on responsive resizing
-  double limitedSquared({num? max, num? min}) => FlowManager.instance.squared(
+  double limitedSquared({num? max, num? min}) => FlexManager.instance.squared(
         this,
         max: max,
         min: min,
