@@ -11,9 +11,10 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({
+    super.key,
+  });
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -22,13 +23,16 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flexiflow Example Home Page'),
+      home: const MyHomePage(title: 'Flexiflow Example'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+  const MyHomePage({
+    super.key,
+    required this.title,
+  });
 
   final String title;
 
@@ -66,6 +70,23 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 100.sqr,
                 width: 100.sqr,
                 color: Colors.red,
+              ),
+              FlowScreen(
+                mobileChild: Container(
+                  height: 100.sqr,
+                  width: 100.sqr,
+                  color: Colors.yellow,
+                ),
+                tabletChild: Container(
+                  height: 100.sqr,
+                  width: 100.sqr,
+                  color: Colors.blue,
+                ),
+                desktopChild: Container(
+                  height: 100.sqr,
+                  width: 100.sqr,
+                  color: Colors.green,
+                ),
               ),
             ],
           ),

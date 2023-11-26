@@ -2,8 +2,8 @@ import 'package:flexiflow/src/util/devices_flow.dart';
 import 'package:flexiflow/src/widgets/flow_builder.dart';
 import 'package:flutter/widgets.dart';
 
-class Flow extends StatefulWidget {
-  const Flow({
+class FlowScreen extends StatefulWidget {
+  const FlowScreen({
     required this.mobileChild,
     required this.tabletChild,
     required this.desktopChild,
@@ -15,10 +15,10 @@ class Flow extends StatefulWidget {
   final Widget desktopChild;
 
   @override
-  State<Flow> createState() => _FlowState();
+  State<FlowScreen> createState() => _FlowScreenState();
 }
 
-class _FlowState extends State<Flow> {
+class _FlowScreenState extends State<FlowScreen> {
   @override
   Widget build(BuildContext context) {
     return FlowBuilder(
