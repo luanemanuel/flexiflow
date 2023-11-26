@@ -15,7 +15,7 @@ class FlexiFlow extends StatefulWidget {
   State<FlexiFlow> createState() => _FlexiFlowState();
 }
 
-class _FlexiFlowState extends State<FlexiFlow> {
+class _FlexiFlowState extends State<FlexiFlow> with WidgetsBindingObserver {
   late final FlowManager _flowManager;
 
   @override
@@ -25,6 +25,13 @@ class _FlexiFlowState extends State<FlexiFlow> {
       designSize: widget.designSize,
       context: context,
     );
+    WidgetsBinding.instance.addObserver(this);
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
   }
 
   @override
@@ -34,7 +41,27 @@ class _FlexiFlowState extends State<FlexiFlow> {
   }
 
   @override
+  void didChangeMetrics() {
+    super.didChangeMetrics();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+
+      _rebuildChildren(context);
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     return widget.child;
+  }
+
+  void _rebuildChildren(BuildContext context) {
+    void rebuild(Element el) {
+      el
+        ..markNeedsBuild()
+        ..visitChildren(rebuild);
+    }
+
+    (context as Element).visitChildren(rebuild);
   }
 }
