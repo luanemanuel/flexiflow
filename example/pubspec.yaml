@@ -1,0 +1,27 @@
+name: flexiflow_example
+description: A new Flutter module project.
+publish_to: none
+
+version: 1.0.0
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flexiflow:
+    path: ../
+  logger: ^2.0.2+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  module:
+    androidX: true
+    androidPackage: br.com.luanemanuel.flexiflow_example
+    iosBundleIdentifier: br.com.luanemanuel.flexiflow_example
