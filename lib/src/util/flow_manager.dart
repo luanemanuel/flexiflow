@@ -1,7 +1,6 @@
 import 'package:flutter/widgets.dart';
 
 class FlowManager {
-  static FlowManager? _instance;
 
   factory FlowManager({
     required Size designSize,
@@ -24,6 +23,7 @@ class FlowManager {
     _designSize = designSize;
     _context = context;
   }
+  static FlowManager? _instance;
 
   /// Store the design size of the app
   late Size _designSize;
