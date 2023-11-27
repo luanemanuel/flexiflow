@@ -56,32 +56,32 @@ class FlexManager {
 
   /// Calculate responsive width based on the design size. Can limit the max or/and min width
   /// [width] is the width of the widget in the design.
-  /// [maxWidth] is the maximum width can take on responsive resizing.
-  /// [minWidth] is the minimum width can take on responsive resizing.
-  double width(num width, {num? maxWidth, num? minWidth}) {
+  /// [max] is the maximum width can take on responsive resizing.
+  /// [min] is the minimum width can take on responsive resizing.
+  double width(num width, {num? max, num? min}) {
     final calculatedWidth =
         width * MediaQuery.sizeOf(_context).width / _designSize.width;
-    if (maxWidth != null && calculatedWidth > maxWidth) {
-      return maxWidth.toDouble();
+    if (max != null && calculatedWidth > max) {
+      return max.toDouble();
     }
-    if (minWidth != null && calculatedWidth < minWidth) {
-      return minWidth.toDouble();
+    if (min != null && calculatedWidth < min) {
+      return min.toDouble();
     }
     return calculatedWidth;
   }
 
   /// Calculate responsive height based on the design size. Can limit the max or/and min height
   /// [height] is the height of the widget in the design.
-  /// [maxHeight] is the maximum height can take on responsive resizing.
-  /// [minHeight] is the minimum height can take on responsive resizing.
-  double height(num height, {num? maxHeight, num? minHeight}) {
+  /// [max] is the maximum height can take on responsive resizing.
+  /// [min] is the minimum height can take on responsive resizing.
+  double height(num height, {num? max, num? min}) {
     final calculatedHeight =
         height * MediaQuery.sizeOf(_context).height / _designSize.height;
-    if (maxHeight != null && calculatedHeight > maxHeight) {
-      return maxHeight.toDouble();
+    if (max != null && calculatedHeight > max) {
+      return max.toDouble();
     }
-    if (minHeight != null && calculatedHeight < minHeight) {
-      return minHeight.toDouble();
+    if (min != null && calculatedHeight < min) {
+      return min.toDouble();
     }
     return calculatedHeight;
   }
@@ -130,6 +130,42 @@ class FlexManager {
   double dp(num value, {num? max, num? min}) {
     final devicePixelRatio = MediaQuery.devicePixelRatioOf(_context);
     final calculatedValue = devicePixelRatio * value.toDouble();
+    if (max != null && calculatedValue > max) {
+      return max.toDouble();
+    }
+    if (min != null && calculatedValue < min) {
+      return min.toDouble();
+    }
+    return calculatedValue;
+  }
+
+  /// Calculate responsive size based on the design size using the
+  /// percentage of the screen width.
+  /// Can limit the max or/and min size.
+  /// [value] is the percentage of the screen width.
+  /// [max] is the maximum size can take on responsive resizing.
+  /// [min] is the minimum size can take on responsive resizing.
+  double widthPercentage(num value, {num? max, num? min}) {
+    final percent = value.toDouble() / 100;
+    final calculatedValue = percent * MediaQuery.sizeOf(_context).width;
+    if (max != null && calculatedValue > max) {
+      return max.toDouble();
+    }
+    if (min != null && calculatedValue < min) {
+      return min.toDouble();
+    }
+    return calculatedValue;
+  }
+
+  /// Calculate responsive size based on the design size using the
+  /// percentage of the screen height.
+  /// Can limit the max or/and min size.
+  /// [value] is the percentage of the screen height.
+  /// [max] is the maximum size can take on responsive resizing.
+  /// [min] is the minimum size can take on responsive resizing.
+  double heightPercentage(num value, {num? max, num? min}) {
+    final percent = value.toDouble() / 100;
+    final calculatedValue = percent * MediaQuery.sizeOf(_context).height;
     if (max != null && calculatedValue > max) {
       return max.toDouble();
     }

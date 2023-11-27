@@ -47,6 +47,7 @@ class _FlexiFlowState extends State<FlexiFlow> with WidgetsBindingObserver {
       if (!mounted) return;
 
       _rebuildChildren(context);
+      _flowManager.updateContext(context);
     });
   }
 

@@ -31,40 +31,54 @@ extension FlexExtension on num {
   /// devicePixelRatio to simulate Android DP scaling.
   double get dp => FlexManager.instance.dp(this);
 
+  /// Calculate responsive size based on the design size using the
+  /// percentage of the screen width.
+  double get widthPercentage => FlexManager.instance.widthPercentage(this);
+
+  /// Calculate responsive size based on the design size using the
+  /// percentage of the screen width.
+  double get wPerc => widthPercentage;
+
+  /// Calculate responsive size based on the design size using the
+  /// percentage of the screen height.
+  double get heightPercentage => FlexManager.instance.heightPercentage(this);
+
+  /// Calculate responsive size based on the design size using the
+  /// percentage of the screen height.
+  double get hPerc => heightPercentage;
+
   /// Calculate responsive width based on the design size. Can limit the max or/and min width
-  /// [maxWidth] is the maximum width can take on responsive resizing
-  /// [minWidth] is the minimum width can take on responsive resizing
-  double limitedWidth({num? maxWidth, num? minWidth}) =>
-      FlexManager.instance.width(
+  /// [max] is the maximum width can take on responsive resizing
+  /// [min] is the minimum width can take on responsive resizing
+  double limitedWidth({num? max, num? min}) => FlexManager.instance.width(
         this,
-        maxWidth: maxWidth,
-        minWidth: minWidth,
+        max: max,
+        min: min,
       );
 
   /// Calculate responsive width based on the design size. Can limit the max or/and min width
-  /// [maxWidth] is the maximum width can take on responsive resizing
-  /// [minWidth] is the minimum width can take on responsive resizing
-  double limW({num? maxWidth, num? minWidth}) => limitedWidth(
-        maxWidth: maxWidth,
-        minWidth: minWidth,
+  /// [max] is the maximum width can take on responsive resizing
+  /// [min] is the minimum width can take on responsive resizing
+  double limW({num? max, num? min}) => limitedWidth(
+        max: max,
+        min: min,
       );
 
   /// Calculate responsive height based on the design size. Can limit the max or/and min height
-  /// [maxHeight] is the maximum height can take on responsive resizing
-  /// [minHeight] is the minimum height can take on responsive resizing
-  double limitedHeight({num? maxHeight, num? minHeight}) =>
-      FlexManager.instance.height(
+  /// [max] is the maximum height can take on responsive resizing
+  /// [min] is the minimum height can take on responsive resizing
+  double limitedHeight({num? max, num? min}) => FlexManager.instance.height(
         this,
-        maxHeight: maxHeight,
-        minHeight: minHeight,
+        max: max,
+        min: min,
       );
 
   /// Calculate responsive height based on the design size. Can limit the max or/and min height
-  /// [maxHeight] is the maximum height can take on responsive resizing
-  /// [minHeight] is the minimum height can take on responsive resizing
-  double limH({num? maxHeight, num? minHeight}) => limitedHeight(
-        maxHeight: maxHeight,
-        minHeight: minHeight,
+  /// [max] is the maximum height can take on responsive resizing
+  /// [min] is the minimum height can take on responsive resizing
+  double limH({num? max, num? min}) => limitedHeight(
+        max: max,
+        min: min,
       );
 
   /// Calculate responsive squared size based on the design size. Can limit the max or/and min size.
@@ -120,6 +134,50 @@ extension FlexExtension on num {
   /// [max] is the maximum size can take on responsive resizing
   /// [min] is the minimum size can take on responsive resizing
   double limDp({num? max, num? min}) => limitedDp(
+        max: max,
+        min: min,
+      );
+
+  /// Calculate responsive size based on the design size using the
+  /// devicePixelRatio to simulate Android DP and iOS SP scaling.
+  /// Can limit the max or/and min size.
+  /// [max] is the maximum size can take on responsive resizing.
+  /// [min] is the minimum size can take on responsive resizing.
+  double limitedWidthPercentage({num? max, num? min}) =>
+      FlexManager.instance.widthPercentage(
+        this,
+        max: max,
+        min: min,
+      );
+
+  /// Calculate responsive size based on the design size using the
+  /// devicePixelRatio to simulate Android DP and iOS SP scaling.
+  /// Can limit the max or/and min size.
+  /// [max] is the maximum size can take on responsive resizing.
+  /// [min] is the minimum size can take on responsive resizing.
+  double limWPerc({num? max, num? min}) => limitedWidthPercentage(
+        max: max,
+        min: min,
+      );
+
+  /// Calculate responsive size based on the design size using the
+  /// percentage of the screen height.
+  /// Can limit the max or/and min size.
+  /// [max] is the maximum size can take on responsive resizing.
+  /// [min] is the minimum size can take on responsive resizing.
+  double limitedHeightPercentage({num? max, num? min}) =>
+      FlexManager.instance.heightPercentage(
+        this,
+        max: max,
+        min: min,
+      );
+
+  /// Calculate responsive size based on the design size using the
+  /// percentage of the screen height.
+  /// Can limit the max or/and min size.
+  /// [max] is the maximum size can take on responsive resizing.
+  /// [min] is the minimum size can take on responsive resizing.
+  double limHPerc({num? max, num? min}) => limitedHeightPercentage(
         max: max,
         min: min,
       );
