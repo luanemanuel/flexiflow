@@ -15,11 +15,11 @@ extension FlexExtension on num {
   /// Calculate responsive height based on the design size.
   double get h => height;
 
-  /// Calculate responsive squared size based on the design size.
+  /// Calculate responsive squared size based on the smallest screen size.
   /// Useful for square widgets like [CircleAvatar], [IconButton], etc.
   double get squared => FlexManager.instance.squared(this);
 
-  /// Calculate responsive squared size based on the design size.
+  /// Calculate responsive squared size based on the smallest screen size.
   /// Useful for square widgets like [CircleAvatar], [IconButton], etc.
   double get sqr => squared;
 
@@ -81,7 +81,8 @@ extension FlexExtension on num {
         min: min,
       );
 
-  /// Calculate responsive squared size based on the design size. Can limit the max or/and min size.
+  /// Calculate responsive squared size based on the smallest screen size.
+  /// Can limit the max or/and min size.
   /// Useful for square widgets like [CircleAvatar], [IconButton], etc.
   /// [max] is the maximum size can take on responsive resizing
   /// [min] is the minimum size can take on responsive resizing
@@ -91,7 +92,8 @@ extension FlexExtension on num {
         min: min,
       );
 
-  /// Calculate responsive squared size based on the design size. Can limit the max or/and min size.
+  /// Calculate responsive squared size based on the smallest screen size.
+  /// Can limit the max or/and min size.
   /// Useful for square widgets like [CircleAvatar], [IconButton], etc.
   /// [max] is the maximum size can take on responsive resizing
   /// [min] is the minimum size can take on responsive resizing

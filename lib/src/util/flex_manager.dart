@@ -86,14 +86,18 @@ class FlexManager {
     return calculatedHeight;
   }
 
-  /// Calculate a square responsive size based on width of the design. Can limit the max or/and min size.
+  /// Calculate a square responsive size based on the smallest screen size.
+  /// Can limit the max or/and min size.
   /// This is useful for responsive square widgets like buttons, icons, etc.
   /// [value] is the size of the widget in the design.
   /// [max] is the maximum size can take on responsive resizing.
   /// [min] is the minimum size can take on responsive resizing.
   double squared(num value, {num? max, num? min}) {
-    final calculatedValue =
-        value * MediaQuery.sizeOf(_context).width / _designSize.width;
+    final width = MediaQuery.sizeOf(_context).width;
+    final height = MediaQuery.sizeOf(_context).height;
+    final smallestValue = width > height ? height : width;
+    final designSize = width > height ? _designSize.height : _designSize.width;
+    final calculatedValue = value * smallestValue / designSize;
     if (max != null && calculatedValue > max) {
       return max.toDouble();
     }
