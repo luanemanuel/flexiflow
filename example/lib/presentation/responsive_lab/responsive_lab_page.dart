@@ -224,6 +224,17 @@ class _ResponsiveLabPageState extends State<ResponsiveLabPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Padding(
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 24,
+                  ),
+                  child: Text(
+                    'In ResponsiveLab you can test the responsiveness types of the FlexiFlow package.'
+                    '\n  Test the responsiveness types by changing the values of the fields and see the result in the red box.',
+                    textAlign: TextAlign.center,
+                    style: theme.textTheme.bodyLarge,
+                  ),
+                ),
+                Padding(
                   padding: const EdgeInsets.only(
                     bottom: 24,
                   ),

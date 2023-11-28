@@ -32,6 +32,7 @@ class _SizeChangerState extends State<SizeChanger> {
           TextField(
             controller: widget.controller,
             onChanged: widget.onChanged,
+            keyboardType: TextInputType.number,
           ),
           Slider(
             value: double.parse(widget.value),

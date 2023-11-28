@@ -1,3 +1,4 @@
+import 'package:flexiflow/flexiflow.dart';
 import 'package:flutter/material.dart';
 
 class BaseFlowLabPage extends StatefulWidget {
@@ -19,7 +20,80 @@ class _BaseFlowLabPageState extends State<BaseFlowLabPage> {
         title: Text('Base Flow Laboratory'),
       ),
       body: Center(
-        child: Text('BaseFlowLabPage'),
+        child: FlowScreen(
+          desktopChild: Container(
+            width: double.infinity,
+            color: Colors.red,
+            child: Column(
+              children: [
+                Text(
+                  'Resize the window to see the changes',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+                Spacer(),
+                Text(
+                  'Desktop',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+                Spacer(),
+              ],
+            ),
+          ),
+          tabletChild: Container(
+            width: double.infinity,
+            color: Colors.green,
+            child: Column(
+              children: [
+                Text(
+                  'Resize the window to see the changes',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+                Spacer(),
+                Text(
+                  'Tablet',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+                Spacer(),
+              ],
+            ),
+          ),
+          mobileChild: Container(
+            width: double.infinity,
+            color: Colors.blue,
+            child: Column(
+              children: [
+                Text(
+                  'Resize the window to see the changes',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+                Spacer(),
+                Text(
+                  'Mobile',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                  ),
+                ),
+                Spacer(),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
