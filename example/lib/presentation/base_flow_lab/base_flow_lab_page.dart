@@ -23,7 +23,7 @@ class _BaseFlowLabPageState extends State<BaseFlowLabPage> {
         child: FlowScreen(
           desktopChild: Container(
             width: double.infinity,
-            color: Colors.red,
+            color: Colors.deepPurple,
             child: Column(
               children: [
                 Text(
@@ -32,6 +32,7 @@ class _BaseFlowLabPageState extends State<BaseFlowLabPage> {
                     color: Colors.white,
                     fontSize: 24,
                   ),
+                  textAlign: TextAlign.center,
                 ),
                 Spacer(),
                 Text(

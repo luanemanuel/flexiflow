@@ -13,6 +13,8 @@ dependencies:
   flexiflow:
     path: ../
   logger: ^2.0.2+1
+  collection: ^1.18.0
+  flutter_colorpicker: ^1.0.3
 
 dev_dependencies:
   flutter_test:

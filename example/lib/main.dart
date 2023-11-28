@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     FlexiFlow(
-      designSize: Size(360, 640),
+      designSize: Size(1920, 1080),
       child: const MyApp(),
     ),
   );
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flexiflow Example',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigoAccent),
         useMaterial3: true,
       ),
       home: const HomePage(),

@@ -239,7 +239,7 @@ class _ResponsiveLabPageState extends State<ResponsiveLabPage> {
                     bottom: 24,
                   ),
                   child: SizedBox(
-                    width: 50.w,
+                    width: 200.w,
                     child: SwitchListTile(
                       value: isResponsiveEnabled,
                       onChanged: (value) {
@@ -256,7 +256,7 @@ class _ResponsiveLabPageState extends State<ResponsiveLabPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SizedBox(
-                        width: 50.w,
+                        width: 200.w,
                       ),
                       Container(
                         decoration: BoxDecoration(
@@ -668,7 +668,7 @@ class _ResponsiveLabPageState extends State<ResponsiveLabPage> {
                         ),
                       ),
                       Container(
-                        width: 50.w,
+                        width: 220.w,
                         margin: const EdgeInsets.only(
                           left: 24,
                         ),
@@ -681,7 +681,7 @@ class _ResponsiveLabPageState extends State<ResponsiveLabPage> {
                         child: Padding(
                           padding: const EdgeInsets.all(24),
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Column(
                                 children: [
@@ -695,8 +695,8 @@ class _ResponsiveLabPageState extends State<ResponsiveLabPage> {
                                 ],
                               ),
                               Padding(
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: 24,
+                                padding: const EdgeInsets.only(
+                                  left: 12,
                                 ),
                                 child: Column(
                                   children: [
