@@ -1,8 +1,18 @@
+import 'package:flexiflow/flexiflow.dart';
 import 'package:flexiflow/src/model/devices_types.dart';
-import 'package:flexiflow/src/util/iflow.dart';
 import 'package:flutter/widgets.dart';
 
+/// Base Flow class for the mobile, tablet and desktop devices.
+/// This class is used to determine the current device type and return the
+/// corresponding widget.
+/// The [DeviceFlow] class is used in the [FlowBuilder] widget.
+/// You can create your own flow class by extending the [IFlow] class
 class DeviceFlow extends IFlow<DevicesTypes> {
+  /// Base Flow class for the mobile, tablet and desktop devices.
+  /// This class is used to determine the current device type and return the
+  /// corresponding widget.
+  /// The [DeviceFlow] class is used in the [FlowBuilder] widget.
+  /// You can create your own flow class by extending the [IFlow] class
   DeviceFlow({
     required BuildContext context,
     required Widget mobileChild,
@@ -32,7 +42,7 @@ class DeviceFlow extends IFlow<DevicesTypes> {
     final size = MediaQuery.sizeOf(_context);
     if (size.width < 600) {
       return DevicesTypes.mobile;
-    } else if (size.width < 900) {
+    } else if (size.width < 1024) {
       return DevicesTypes.tablet;
     } else {
       return DevicesTypes.desktop;

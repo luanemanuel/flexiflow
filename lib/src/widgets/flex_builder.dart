@@ -1,14 +1,25 @@
 import 'package:flexiflow/src/util/flex_manager.dart';
 import 'package:flutter/widgets.dart';
 
+/// [FlexiFlow] is a widget that provides a design size to its child and
+/// enables the possibility to use the size extensions.
+/// [designSize] is the size that you designed your app for, like 375x812.
+/// You can take this size from your design tool.
 class FlexiFlow extends StatefulWidget {
+  /// [FlexiFlow] is a widget that provides a design size to its child and
+  /// enables the possibility to use the size extensions.
+  /// [designSize] is the size that you designed your app for, like 375x812.
+  /// You can take this size from your design tool.
   const FlexiFlow({
     required this.designSize,
     required this.child,
     super.key,
   });
 
+  /// [designSize] is the size that you designed your app for, like 375x812.
   final Size designSize;
+
+  /// [child] is the widget that you want to provide the design size to.
   final Widget child;
 
   @override
