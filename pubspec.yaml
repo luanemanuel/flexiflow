@@ -1,0 +1,12 @@
+name: flexiflow
+description: "A responsive and flexible solution designed to effortlessly adapt to your needs, providing a seamless and dev-friendly experience."
+version: 1.0.0
+repository: https://github.com/luanemanuel/flexiflow/tree/master
+issue_tracker: https://github.com/luanemanuel/flexiflow/issues
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
