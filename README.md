@@ -198,12 +198,11 @@ To view practical examples of Flexiflow usage, visit our [Flow Lab](https://gith
 
 ## Contributing
 
-Contribuições são sempre bem-vindas! Se deseja contribuir com o Flexiflow, sinta-se à vontade para acessar
-nosso [repositório no GitHub](https://github.com/luanemanuel/flexiflow/).
+Contributions are always welcome! If you'd like to contribute to Flexiflow, feel free to visit our [GitHub repository](https://github.com/luanemanuel/flexiflow/).
 
 ## Bugs and Suggestions
 
-Contributions are always welcome! If you'd like to contribute to Flexiflow, feel free to visit our [GitHub repository](https://github.com/luanemanuel/flexiflow/).
+You can report bugs and suggest new features in our [issues](https://github.com/luanemanuel/flexiflow/issues).
 
 ## License
 
@@ -211,4 +210,4 @@ Flexiflow is licensed under the MIT License. See the [LICENSE](https://github.co
 
 ## Acknowledgements
 
-- We thank **Arthur Goelzer** for the artistic contributions used in the project's README.
+We thank **Arthur Goelzer** for the artistic contributions used in the project's README.

@@ -237,4 +237,4 @@ arquivo [LICENSE](https://github.com/luanemanuel/flexiflow/blob/master/LICENSE) 
 
 ## Agradecimentos
 
-- Agradecemos a **Arthur Goelzer** pelas contribuições artísticas utilizadas no README do projeto.
+Agradecemos a **Arthur Goelzer** pelas contribuições artísticas utilizadas no README do projeto.
