@@ -2,6 +2,7 @@
 <img src="https://github.com/luanemanuel/flexiflow/blob/master/assets/logo.png?raw=true" width="350" alt="Flexiflow Package"/>
 </p>
 
+<br>
 
 <p align="center">
 	<a href="https://pub.dev/packages/flexiflow"><img src="https://img.shields.io/pub/v/flexiflow.svg" alt="Pub.dev Badge"></a>
@@ -19,7 +20,6 @@
 <img src="https://img.shields.io/badge/windows-✔-brightgreen.svg" alt="Windows Badge">
 <img src="https://img.shields.io/badge/linux-✔-brightgreen.svg" alt="Linux Badge">
 </p>
-
 <br>
 
 <h4 align="center">
@@ -27,8 +27,8 @@ Idiomas disponíveis
 </h4>
 
 <p align="center">
-    <a href=""><img src="https://github.com/luanemanuel/flexiflow/blob/master/assets/en_us/en_us.png?raw=true" alt="English Version"/></a>
-    <a href=""><img src="https://github.com/luanemanuel/flexiflow/blob/master/assets/pt_br/pt_br.png?raw=true" alt="Versão em Português"/></a>
+    <a href="https://github.com/luanemanuel/flexiflow/blob/master/README.md"><img src="https://github.com/luanemanuel/flexiflow/blob/master/assets/en_us/en_us.png?raw=true" alt="English Version"/></a>
+    <a href="https://github.com/luanemanuel/flexiflow/blob/master/README.pt-br.md"><img src="https://github.com/luanemanuel/flexiflow/blob/master/assets/pt_br/pt_br.png?raw=true" alt="Versão em Português"/></a>
 </p>
 
 <br>
