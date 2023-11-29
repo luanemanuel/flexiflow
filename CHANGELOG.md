@@ -1,3 +1,9 @@
+## 1.0.0+2
+
+### **Documentation**
+
+- Updated language images size in README.md and README.pt-br.md files.
+
 ## 1.0.0+1
 
 ### **Documentation**
