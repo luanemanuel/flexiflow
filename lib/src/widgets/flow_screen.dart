@@ -25,8 +25,10 @@ class FlowScreen extends StatefulWidget {
 
   /// [mobileChild] is the widget that will be built if the device is mobile.
   final Widget mobileChild;
+
   /// [tabletChild] is the widget that will be built if the device is tablet.
   final Widget tabletChild;
+
   /// [desktopChild] is the widget that will be built if the device is desktop.
   final Widget desktopChild;
 
