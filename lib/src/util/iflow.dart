@@ -8,7 +8,6 @@ import 'package:flutter/widgets.dart';
 /// [getCurrentFlow] is the current flow based on the current type. It's used to
 /// return the current flow widget based on the current type.
 abstract class IFlow<Type> {
-
   /// Return the current type of the flow. It's used to return the
   /// current type based on some logic, like the screen size.
   Type getCurrentType();

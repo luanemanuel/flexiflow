@@ -1,3 +1,13 @@
+## 1.0.0+3
+
+### **Fixes**
+
+- Adjust on `IFlow` and `FlowBuilder` to match dart format style.
+
+### **Documentation**
+
+- Removed space between logo and tags in README.md and README.pt-br.md files.
+
 ## 1.0.0+2
 
 ### **Documentation**
