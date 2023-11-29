@@ -27,8 +27,8 @@ Available Languages
 </h4>
 
 <p align="center">
-    <a href="https://github.com/luanemanuel/flexiflow/blob/master/README.md"><img src="https://github.com/luanemanuel/flexiflow/blob/master/assets/en_us/en_us.png" alt="English Version"/></a>
-    <a href="https://github.com/luanemanuel/flexiflow/blob/master/README.pt-br.md"><img src="https://github.com/luanemanuel/flexiflow/blob/master/assets/pt_br/pt_br.png" alt="Versão em Português"/></a>
+    <a href="https://github.com/luanemanuel/flexiflow/blob/master/README.md"><img src="https://github.com/luanemanuel/flexiflow/blob/master/assets/en_us/en_us.png" alt="English Version" style="width: 50px; height: 50px;"/></a>
+    <a href="https://github.com/luanemanuel/flexiflow/blob/master/README.pt-br.md"><img src="https://github.com/luanemanuel/flexiflow/blob/master/assets/pt_br/pt_br.png" alt="Versão em Português" style="width: 50px; height: 50px;"/></a>
 </p>
 
 <br>
