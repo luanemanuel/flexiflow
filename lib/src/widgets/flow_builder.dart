@@ -14,7 +14,6 @@ class FlowBuilder<DeviceType, FlowType extends IFlow<DeviceType>>
     super.key,
   });
 
-
   /// [flow] is the [IFlow] that is used to build the widget.
   final FlowType flow;
 
