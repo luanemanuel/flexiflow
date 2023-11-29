@@ -1,3 +1,9 @@
+## 1.0.0+1
+
+### **Documentation**
+
+- Updated README.md and README.pt-br.md files to fix images links.
+
 ## 1.0.0
 
 ## **Initial release**

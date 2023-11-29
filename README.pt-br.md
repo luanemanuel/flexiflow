@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/luanemanuel/flexiflow/blob/master/assets/logo.png?raw=true" width="350" alt="Flexiflow Package"/>
+<img src="https://raw.githubusercontent.com/luanemanuel/flexiflow/master/assets/logo.png" width="350" alt="Flexiflow Package"/>
 </p>
 
 <br>
@@ -27,8 +27,8 @@ Idiomas disponíveis
 </h4>
 
 <p align="center">
-    <a href="https://github.com/luanemanuel/flexiflow/blob/master/README.md"><img src="https://github.com/luanemanuel/flexiflow/blob/master/assets/en_us/en_us.png?raw=true" alt="English Version" style="width: 50px; height: 50px;"/></a>
-    <a href="https://github.com/luanemanuel/flexiflow/blob/master/README.pt-br.md"><img src="https://github.com/luanemanuel/flexiflow/blob/master/assets/pt_br/pt_br.png?raw=true" alt="Versão em Português" style="width: 50px; height: 50px;"/></a>
+    <a href="https://github.com/luanemanuel/flexiflow/blob/master/README.md"><img src="https://raw.githubusercontent.com/luanemanuel/flexiflow/master/assets/en_us/en_us.png" alt="English Version" style="width: 50px; height: 50px;"/></a>
+    <a href="https://github.com/luanemanuel/flexiflow/blob/master/README.pt-br.md"><img src="https://raw.githubusercontent.com/luanemanuel/flexiflow/master/assets/pt_br/pt_br.png" alt="Versão em Português" style="width: 50px; height: 50px;"/></a>
 </p>
 
 <br>
